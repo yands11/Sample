@@ -28,7 +28,7 @@ android {
             )
         }
     }
-
+    dataBinding.isEnabled = true
 }
 
 dependencies {
