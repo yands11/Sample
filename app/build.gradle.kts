@@ -6,15 +6,15 @@ plugins {
 }
 
 android {
-    compileSdkVersion(29)
-    buildToolsVersion = "29.0.2"
+    compileSdkVersion(Config.CompileSDK)
+    buildToolsVersion = Version.AndroidBuildTools
 
     defaultConfig {
-        applicationId = "com.dot2line.sample"
-        minSdkVersion(21)
-        targetSdkVersion(29)
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = Config.AppId
+        targetSdkVersion(Config.TargetSDK)
+        minSdkVersion(Config.MinSDK)
+        versionCode = Config.VersionCode
+        versionName = Config.VersionName
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,11 +33,12 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61")
-    implementation("androidx.appcompat:appcompat:1.1.0")
-    implementation("androidx.core:core-ktx:1.2.0")
-    implementation("androidx.constraintlayout:constraintlayout:1.1.3")
-    testImplementation("junit:junit:4.12")
-    androidTestImplementation("androidx.test.ext:junit:1.1.1")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+    implementation(Library.Kotlin)
+    implementation(Library.AppCompat)
+    implementation(Library.Core)
+    implementation(Library.Constraint)
+    implementation(Library.ViewModel)
+    testImplementation(Library.JUnit)
+    androidTestImplementation(Library.JUnitExt)
+    androidTestImplementation(Library.Espresso)
 }
