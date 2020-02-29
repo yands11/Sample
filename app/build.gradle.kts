@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    api(project(mapOf("path" to ":data")))
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Library.Kotlin)
     implementation(Library.AppCompat)
@@ -45,6 +46,10 @@ dependencies {
     implementation(Library.ViewModel)
     implementation(Library.Material)
     implementation(Library.Coil)
+    implementation(Library.OkHttp)
+    implementation(Library.Retrofit)
+    implementation(Library.KotlinSerializationConverter)
+    implementation(Library.Timber)
     testImplementation(Library.JUnit)
     androidTestImplementation(Library.JUnitExt)
     androidTestImplementation(Library.Espresso)

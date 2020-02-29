@@ -16,6 +16,7 @@ object Library {
     const val KotlinSerializationConverter =
         "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Version.KotlinSerializationConverter}"
 
+    const val Timber = "com.jakewharton.timber:timber:${Version.Timber}"
     const val JUnit = "junit:junit:${Version.JUnit}"
     const val JUnitExt = "androidx.test.ext:junit:${Version.JUnitExt}"
     const val Espresso = "androidx.test.espresso:espresso-core:${Version.Espresso}"
