@@ -29,6 +29,10 @@ android {
         }
     }
     dataBinding.isEnabled = true
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -39,6 +43,8 @@ dependencies {
     implementation(Library.Constraint)
     implementation(Library.LiveData)
     implementation(Library.ViewModel)
+    implementation(Library.Material)
+    implementation(Library.Coil)
     testImplementation(Library.JUnit)
     androidTestImplementation(Library.JUnitExt)
     androidTestImplementation(Library.Espresso)

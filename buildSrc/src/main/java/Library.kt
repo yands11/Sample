@@ -8,7 +8,9 @@ object Library {
     const val Constraint = "androidx.constraintlayout:constraintlayout:${Version.Constraint}"
     const val LiveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Version.Lifecycle}"
     const val ViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.Lifecycle}"
+    const val Material = "com.google.android.material:material:${Version.Material}"
 
+    const val Coil = "io.coil-kt:coil:${Version.Coil}"
     const val OkHttp = "com.squareup.okhttp3:okhttp:${Version.OkHttp}"
     const val Retrofit = "com.squareup.retrofit2:retrofit:${Version.Retrofit}"
     const val KotlinSerializationConverter =

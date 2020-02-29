@@ -10,6 +10,8 @@ object Version {
     const val Core = "1.2.0"
     const val Constraint = "1.1.3"
     const val Lifecycle = "2.2.0"
+    const val Material = "1.1.0"
+    const val Coil = "0.9.5"
     const val OkHttp = "4.4.0"
     const val Retrofit = "2.7.2"
     const val JUnit = "4.12"
