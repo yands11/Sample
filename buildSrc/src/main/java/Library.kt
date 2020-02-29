@@ -6,6 +6,7 @@ object Library {
     const val AppCompat = "androidx.appcompat:appcompat:${Version.AppCompat}"
     const val Core = "androidx.core:core-ktx:${Version.Core}"
     const val Constraint = "androidx.constraintlayout:constraintlayout:${Version.Constraint}"
+    const val LiveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Version.Lifecycle}"
     const val ViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.Lifecycle}"
 
     const val OkHttp = "com.squareup.okhttp3:okhttp:${Version.OkHttp}"

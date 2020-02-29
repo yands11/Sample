@@ -37,6 +37,7 @@ dependencies {
     implementation(Library.AppCompat)
     implementation(Library.Core)
     implementation(Library.Constraint)
+    implementation(Library.LiveData)
     implementation(Library.ViewModel)
     testImplementation(Library.JUnit)
     androidTestImplementation(Library.JUnitExt)
