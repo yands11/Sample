@@ -16,6 +16,11 @@ object Library {
     const val KotlinSerializationConverter =
         "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Version.KotlinSerializationConverter}"
 
+    const val Dagger = "com.google.dagger:dagger:${Version.Dagger}"
+    const val DaggerAndroidSupport = "com.google.dagger:dagger-android-support:${Version.Dagger}"
+    const val DaggerCompiler = "com.google.dagger:dagger-compiler:${Version.Dagger}"
+    const val DaggerAndroidProcessor = "com.google.dagger:dagger-android-processor:${Version.Dagger}"
+
     const val Timber = "com.jakewharton.timber:timber:${Version.Timber}"
     const val JUnit = "junit:junit:${Version.JUnit}"
     const val JUnitExt = "androidx.test.ext:junit:${Version.JUnitExt}"
