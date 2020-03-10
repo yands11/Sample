@@ -2,7 +2,7 @@ object Version {
     const val AndroidBuildTools = "29.0.2"
     const val AndroidGradle = "3.6.0"
 
-    const val Kotlin = "1.3.61"
+    const val Kotlin = "1.3.70"
     const val KotlinSerialization = "0.14.0"
     const val KotlinSerializationConverter = "0.4.0"
 
