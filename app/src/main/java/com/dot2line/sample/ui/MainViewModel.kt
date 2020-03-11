@@ -8,9 +8,7 @@ import com.dot2line.sample.base.BaseViewModel
 import com.dot2line.sample.ui.feed.model.PhotoUiModel
 import com.dot2line.sample.ui.feed.model.asUiModel
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
 import okhttp3.HttpUrl
@@ -19,11 +17,12 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import retrofit2.Retrofit
+import timber.log.Timber
 
 
 class MainViewModel : BaseViewModel() {
 
-   val contentType = "application/json".toMediaType()
+    val contentType = "application/json".toMediaType()
     val client = OkHttpClient.Builder()
         .addInterceptor(
             Interceptor { chain ->
@@ -51,7 +50,9 @@ class MainViewModel : BaseViewModel() {
     val sample: LiveData<List<PhotoUiModel>> = _sample
 
     init {
-        viewModelScope.launch {
+        (viewModelScope + CoroutineExceptionHandler { _, t ->
+            Timber.e(t)
+        }).launch {
             getPhotos().body()?.map { it.asUiModel() }.let(_sample::postValue)
         }
     }
