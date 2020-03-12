@@ -1,7 +1,5 @@
 object Library {
     const val Kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Version.Kotlin}"
-    const val KotlinSerialization =
-        "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Version.KotlinSerialization}"
 
     const val AppCompat = "androidx.appcompat:appcompat:${Version.AppCompat}"
     const val Core = "androidx.core:core-ktx:${Version.Core}"
@@ -13,8 +11,8 @@ object Library {
     const val Coil = "io.coil-kt:coil:${Version.Coil}"
     const val OkHttp = "com.squareup.okhttp3:okhttp:${Version.OkHttp}"
     const val Retrofit = "com.squareup.retrofit2:retrofit:${Version.Retrofit}"
-    const val KotlinSerializationConverter =
-        "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Version.KotlinSerializationConverter}"
+    const val GsonConverter = "com.squareup.retrofit2:converter-gson:${Version.Retrofit}"
+    const val Gson = "com.google.code.gson:gson:${Version.Gson}"
 
     const val Dagger = "com.google.dagger:dagger:${Version.Dagger}"
     const val DaggerAndroidSupport = "com.google.dagger:dagger-android-support:${Version.Dagger}"

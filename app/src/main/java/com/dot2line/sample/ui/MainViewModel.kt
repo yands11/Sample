@@ -7,16 +7,15 @@ import com.dot2line.sample.api.UnsplashService
 import com.dot2line.sample.base.BaseViewModel
 import com.dot2line.sample.ui.feed.model.PhotoUiModel
 import com.dot2line.sample.ui.feed.model.asUiModel
-import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
+import com.google.gson.Gson
 import kotlinx.coroutines.*
-import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonConfiguration
 import okhttp3.HttpUrl
 import okhttp3.Interceptor
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import timber.log.Timber
 
 
@@ -41,7 +40,7 @@ class MainViewModel : BaseViewModel() {
         .client(client)
         .baseUrl("https://api.unsplash.com/")
         .addConverterFactory(
-            Json(JsonConfiguration(strictMode = false)).asConverterFactory(contentType)
+            GsonConverterFactory.create(Gson())
         )
         .build()
     val unsplashService = retrofit.create(UnsplashService::class.java)

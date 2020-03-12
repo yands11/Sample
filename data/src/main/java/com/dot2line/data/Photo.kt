@@ -1,8 +1,5 @@
 package com.dot2line.data
 
-import kotlinx.serialization.Serializable
-
-@Serializable
 data class Photo(
     val id: String,
     val created_at: String,
@@ -22,7 +19,7 @@ data class Photo(
     val user: User
 )
 
-@Serializable
+
 data class Urls(
     val full: String,
     val raw: String,
@@ -31,7 +28,6 @@ data class Urls(
     val thumb: String
 )
 
-@Serializable
 data class Links(
     val self: String,
     val html: String,
@@ -44,7 +40,6 @@ data class Links(
     val download_location: String? = null
 )
 
-@Serializable
 data class User(
     val id: String,
     val updated_at: String,
@@ -65,7 +60,6 @@ data class User(
     val accepted_tos: Boolean
 )
 
-@Serializable
 data class ProfileImage(
     val large: String,
     val medium: String,

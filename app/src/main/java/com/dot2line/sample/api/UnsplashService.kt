@@ -13,4 +13,5 @@ interface UnsplashService {
         @Query("page") page: Int = 1,
         @Query("per_page") perPage: Int = 20
     ): Response<List<Photo>>
+
 }

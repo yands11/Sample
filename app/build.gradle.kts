@@ -49,7 +49,7 @@ dependencies {
     implementation(Library.Coil)
     implementation(Library.OkHttp)
     implementation(Library.Retrofit)
-    implementation(Library.KotlinSerializationConverter)
+    implementation(Library.GsonConverter)
     implementation(Library.Timber)
     implementation(Library.Dagger)
     implementation(Library.DaggerAndroidSupport)
