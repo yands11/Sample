@@ -12,6 +12,7 @@ object Library {
     const val OkHttp = "com.squareup.okhttp3:okhttp:${Version.OkHttp}"
     const val Retrofit = "com.squareup.retrofit2:retrofit:${Version.Retrofit}"
     const val GsonConverter = "com.squareup.retrofit2:converter-gson:${Version.Retrofit}"
+    const val LoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Version.LoggingInterceptor}"
     const val Gson = "com.google.code.gson:gson:${Version.Gson}"
 
     const val Dagger = "com.google.dagger:dagger:${Version.Dagger}"

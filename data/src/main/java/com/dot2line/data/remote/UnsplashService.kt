@@ -1,4 +1,4 @@
-package com.dot2line.sample.api
+package com.dot2line.data.remote
 
 import com.dot2line.data.Photo
 import retrofit2.Response

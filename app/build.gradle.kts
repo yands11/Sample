@@ -35,8 +35,8 @@ android {
 }
 
 dependencies {
-    api(project(mapOf("path" to ":data")))
-    implementation(project(mapOf("path" to ":domain", "configuration" to "default")))
+    implementation(project(mapOf("path" to ":data")))
+    implementation(project(mapOf("path" to ":domain")))
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Library.Kotlin)
@@ -47,9 +47,7 @@ dependencies {
     implementation(Library.ViewModel)
     implementation(Library.Material)
     implementation(Library.Coil)
-    implementation(Library.OkHttp)
     implementation(Library.Retrofit)
-    implementation(Library.GsonConverter)
     implementation(Library.Timber)
     implementation(Library.Dagger)
     implementation(Library.DaggerAndroidSupport)
